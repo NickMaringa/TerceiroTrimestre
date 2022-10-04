@@ -1,21 +1,31 @@
-//alert('Oi, eu sou o alert!');
-//console.log('Oi, eu estou no console');
-//document.write('aula de PC');
+//console.log("Console: Alô Mundo...");
+//alert ("alertaÇ: alo mundo...")
+var TABUADA = 2;
 
-let tabuada = 2;
-let nome = Nicole ;
-function meChame(nome){
- document.write ( "<h1>Tabuada do " + tabuada + "<h1>")   
-document.write(tabuada + " x 1 =" + (tabuada*1) +"<br>" );
-document.write (tabuada + " x 2 =" + (tabuada*2) + "<br>" );
-document.write (tabuada + " x 3 =" + (tabuada*3) + "<br>" );
-document.write (tabuada + " x 4 =" + (tabuada*4) + "<br>" );
-document.write(tabuada + " x 5 =" + (tabuada*5) +"<br>" );
-document.write (tabuada + " x 6 =" + (tabuada*6) + "<br>" );
-document.write (tabuada + " x 7 =" + (tabuada*7) + "<br>" );
-document.write (tabuada + " x 8 =" + (tabuada*8) + "<br>" );
-document.write (tabuada + " x 9 =" + (tabuada*9) + "<br>" );
-document.write (tabuada + " x 10 =" + (tabuada*10) + "<br>" );
-document.write ("feita por" + nome);
+function escreva(){
+  document.write("tabuada do" + TABUADA + "<br>")
+document.write( TABUADA+ "x 1 = " + (TABUADA*1) + "<br>"  );
+document.write( TABUADA+ "x 2 = " + (TABUADA*2) + "<br>"  );
+document.write( TABUADA+ "x 3 = " + (TABUADA*3) + "<br>"  );
+document.write( TABUADA+ "x 4 = " + (TABUADA*4) + "<br>"  );
+document.write( TABUADA+ "x 5 = " + (TABUADA*5) + "<br>"  );
+document.write( TABUADA+ "x 6 = " + (TABUADA*6) + "<br>"  );
+document.write( TABUADA+ "x 7 = " + (TABUADA*7) + "<br>"  );
+document.write( TABUADA+ "x 8 = " + (TABUADA*8) + "<br>"  );
+document.write( TABUADA+ "x 9 = " + (TABUADA*9) + "<br>"  );
+document.write( TABUADA+ "x 10 = " + (TABUADA*10) + "<br>"  );
+}
+function escreva(){ 
+  for (var i =1 ;i < 11; i++ ){
+
+document.write( TABUADA + "x " + i + " = " +(TABUADA*i) + "<br>"  ));
+
+}
+}
+function quadrado (){
+  for(var i = 2; i < 21; i++){
+   document.write("O quadrado de " + i + "é" + (i*i) "<br>")
+
+  }
 }
 
