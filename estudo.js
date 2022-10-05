@@ -3,7 +3,7 @@
 var TABUADA = 2;
 
 function escreva(){
-  document.write("tabuada do" + TABUADA + "<br>")
+document.write("tabuada do" + TABUADA + "<br>")
 document.write( TABUADA+ "x 1 = " + (TABUADA*1) + "<br>"  );
 document.write( TABUADA+ "x 2 = " + (TABUADA*2) + "<br>"  );
 document.write( TABUADA+ "x 3 = " + (TABUADA*3) + "<br>"  );
@@ -18,14 +18,27 @@ document.write( TABUADA+ "x 10 = " + (TABUADA*10) + "<br>"  );
 function escreva(){ 
   for (var i =1 ;i < 11; i++ ){
 
-document.write( TABUADA + "x " + i + " = " +(TABUADA*i) + "<br>"  ));
+document.write( TABUADA + "x " + i + " = " +(TABUADA*i) + "<br>"  );
 
 }
 }
 function quadrado (){
   for(var i = 2; i < 21; i++){
-   document.write("O quadrado de " + i + "é" + (i*i) "<br>")
+   document.write("O quadrado de " + i + "é" + (i*i) )
 
   }
 }
+function total (){
+  let valor = document.getElementById("val").Value;
+  let juros = document.getElementById("ju").Value;
+  let mes = document.getElementById("mes").Value;
+  let resultado = 0;
+  for(let i = 1 <= mes; i++) {
+    resultado += valor * (1+(juros/100));
+
+  }
+   document.write("O Resultado é" + resultado);
+
+}
+
 
