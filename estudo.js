@@ -1,65 +1,75 @@
-//console.log("Console: Alô Mundo...");
-//alert ("alertaÇ: alo mundo...")
-var TABUADA = 2;
+//alert("");
+//console.log("");
+//document.write("");
 
-function escreva(){
-document.write("tabuada do" + TABUADA + "<br>")
-document.write( TABUADA+ "x 1 = " + (TABUADA*1) + "<br>"  );
-document.write( TABUADA+ "x 2 = " + (TABUADA*2) + "<br>"  );
-document.write( TABUADA+ "x 3 = " + (TABUADA*3) + "<br>"  );
-document.write( TABUADA+ "x 4 = " + (TABUADA*4) + "<br>"  );
-document.write( TABUADA+ "x 5 = " + (TABUADA*5) + "<br>"  );
-document.write( TABUADA+ "x 6 = " + (TABUADA*6) + "<br>"  );
-document.write( TABUADA+ "x 7 = " + (TABUADA*7) + "<br>"  );
-document.write( TABUADA+ "x 8 = " + (TABUADA*8) + "<br>"  );
-document.write( TABUADA+ "x 9 = " + (TABUADA*9) + "<br>"  );
-document.write( TABUADA+ "x 10 = " + (TABUADA*10) + "<br>"  );
-}
-function escreva(){ 
-  for (var i =1 ;i < 11; i++ ){
+var tabuada = 8;
 
-document.write( TABUADA + "x " + i + " = " +(TABUADA*i) + "<br>"  );
+function meChame(nome) {
+    document.write("<h1>Tabuada do " + tabuada + "</h1>");
+    document.write(tabuada + " x 1 = " + (tabuada * 1) + "<br>");
+    document.write(tabuada + " x 2 = " + (tabuada * 2) + "<br>");
+    document.write(tabuada + " x 3 = " + (tabuada * 3) + "<br>");
+    document.write(tabuada + " x 4 = " + (tabuada * 4) + "<br>");
+    document.write(tabuada + " x 5 = " + (tabuada * 5) + "<br>");
+    document.write(tabuada + " x 6 = " + (tabuada * 6) + "<br>");
+    document.write(tabuada + " x 7 = " + (tabuada * 7) + "<br>");
+    document.write(tabuada + " x 8 = " + (tabuada * 8) + "<br>");
+    document.write(tabuada + " x 9 = " + (tabuada * 9) + "<br>");
+    document.write(tabuada + " x 10 = " + (tabuada * 10) + "<br");
+    document.write("Feita por " + nome);
 
 }
-}
-function quadrado (){
-  for(var i = 2; i < 21; i++){
-   document.write("O quadrado de " + i + "é" + (i*i) )
 
-  }
+function escreva() {
+    for (var i = 1; i < 11; i++) {
+        document.write(tabuada + " x " + i + " = " + (tabuada * i) + "<br>");
+    }
 }
-function total (){
-  let valor = document.getElementById("val").value;
-  let juros = document.getElementById("ju").value;
-  let mes = document.getElementById("mes").value;
-  let resultado = 0;
-  for(let i = 1 <= mes; i++) {
-    resultado += valor * (1+(juros/100));
 
-  }
-   document.write("O Resultado é" + resultado);
+function quadrado() {
+    for (var i = 2; i < 101; i++) {
+        document.write("O Quadrado de " + i + " é " + (i * i) + "<br>")
+    }
+    function moedaBrasil(atual) {
+    return var f = atual.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
 
+    }
 }
-function soma () {
-  let n1 = document.getElementById("n1").value;
-  let n1 = document.getElementById("n2").value;
-  let n1 = document.getElementById("n3").value;
-  let r = Number(n1) + Number(n2) + Number(n3);
-  document.getElementById("resultado").innerHTML = r ;
+function total() {
+    let valor = document.getElementById("val").value;
+    let juros = document.getElementById("ju").value;
+    let mes = document.getElementById("mes").value;
+    if (!Number(valor)) {
+        alert("O valor deve ser um número.");
+        document.getElementById("val").value = "";
+        document.getElementById("val").focus();
+        return
+    }
+    if (!Number(juros)) {
+        alert("O valor dos juros deve ser um número.");
+        document.getElementById("ju").value = "";
+        document.getElementById("ju").focus();
+        return
+    }
+    if (!Number(mes)) {
+        alert("A quantide de meses deve ser um número.");
+        document.getElementById("mes").value = "";
+        document.getElementById("mes").focus();
+        return
+    }
+
+    let resultado = 0;
+    for (let i = 1; i <= mes; i++) {
+        resultado = valor * (1 + (juros / 100));
+        valor = resultado;
+
+       //documnet.write ("")
+    }
+
+document.getElementById("resultado").innerHTML="Total:" + moeda()
+    
 }
-function Media () {
-  let n1 = document.getElementById("n1").value;
-  let n1 = document.getElementById("n2").value;
-  let n1 = document.getElementById("n3").value;
-  let r = Number(n1) + Number(n2) + Number(n3) / Number (3);
-  document.getElementById("resultado").innerHTML = r ;
-}
-function falta() {
-  let n1 = document.getElementById("n1").value;
-  let n1 = document.getElementById("n2").value;
-  let n1 = document.getElementById("n3").value;
-  let r = Number (180)-Number(n1) + Number(n2) + Number(n3);
-  document.getElementById("resultado").innerHTML = r ;
-}
+
+
 
 
