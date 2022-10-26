@@ -1,1 +1,40 @@
+.calculadora {
+    padding: 10px;
+    background:rgb(21, 255, 21);
+    width: 200px;
+    border-radius: 20px;
+}
+.calculadora input{
+    background:rgb(224, 224, 120) ;
+    color:black;
+    border-radius: 5px;
+    height: 25px;
+    
+}
+.spResul {
+    background:rgb(141, 9, 5);
+    color: rgb(245, 247, 162);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 15px;
+}
 
+#btnCalc {
+    width: 50px;
+    padding: 5px;
+    margin-top: 15px;
+    background: rgb(66, 155, 78);
+    border-radius: 10px;
+}
+#btnCalc:hover {
+    background: rgb(12, 29, 15);
+    color: whitesmoke;
+    cursor: pointer;
+
+}
+.listaMensal {
+    padding: 10px;
+    background:rgb(157, 216, 139);
+    width: 200px;
+    border-radius: 20px;
+}
