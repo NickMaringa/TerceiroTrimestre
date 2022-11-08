@@ -70,6 +70,34 @@ function total() {
     document.getElementById("resultado").innerHTML = "Total: " + moeda(resultado);
     //document.write( "O Resultado é " + moeda(resultado) );
 }
+function calculaRaiz() {
+
+ 
+ let : document.getElementByI ("a").value
+ let : document.getElementById ("b").value
+ let : document.getElementById ("c").value
+
+ let delta = (b*b) -4a*c;
+
+
+
+ }
+else if (delta ==0){
+
+
+
+}
+else{
+
+
+}
+
+}
+
+
+
+
+
 
 
 
