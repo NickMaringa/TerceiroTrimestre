@@ -38,6 +38,14 @@
     width: 200px;
     border-radius: 20px;
 }
+.calcF {
+  display: none;
+
+}
+#calcFin:checked + .calculadora.calcF {
+    display: block;
+}
+
 
 
 
